@@ -8,13 +8,8 @@ public class StartUI {
 
     @Autowired
     private Store store;
-
-    private ConsoleInput consoleInput;
-
     @Autowired
-    public void setConsoleInput(ConsoleInput consoleInput) {
-        this.consoleInput = consoleInput;
-    }
+    private ConsoleInput consoleInput;
 
     public void add(String value) {
         store.add(value);
